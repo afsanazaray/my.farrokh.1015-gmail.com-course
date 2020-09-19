@@ -1,0 +1,18 @@
+title: my.farrokh.1015@gmail.com
+description: >-
+  چون حساب جمیل اول بنام افسانه زارعی ثبت کرده بودم بعد تغییر دادم به فرخ غفوری
+  farrokh2199@gmail.com.
+template:
+  repo: my.farrokh.1015@gmail.com-template
+  name: my.farrokh.1015@gmail.com
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
